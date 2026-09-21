@@ -18,7 +18,7 @@ const getBooks = async () => {
 export const generateStaticParams = async () => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`);
     const data = await res.json();
-    
+
     // Next.js requires the route parameters to be strings
     return data.map((book: IBook) => ({
         bookId: book.bookId.toString(),
