@@ -4,7 +4,7 @@ import { IBook } from '../Type/Type';
 
 const getBooks = async () => {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`);
+        const res = await fetch(`https://raw.githubusercontent.com/Raunak-1607/Book-Vibe/main/public/booksData.json`);
         const data = await res.json();
         return data;
     }

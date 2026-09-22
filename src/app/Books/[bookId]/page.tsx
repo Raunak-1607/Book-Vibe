@@ -6,7 +6,7 @@ import Wishbtn from '@/app/Shared-Components/BookDetails/Wishbtn';
 
 const getBooks = async () => {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`);
+        const res = await fetch(`https://raw.githubusercontent.com/Raunak-1607/Book-Vibe/main/public/booksData.json`);
         const data = await res.json();
         return data;
     }
@@ -16,7 +16,7 @@ const getBooks = async () => {
 }
 
 export const generateStaticParams = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`);
+    const res = await fetch(`https://raw.githubusercontent.com/Raunak-1607/Book-Vibe/main/public/booksData.json`);
     const data = await res.json();
 
     // Next.js requires the route parameters to be strings
