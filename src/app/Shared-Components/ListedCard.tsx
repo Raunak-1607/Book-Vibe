@@ -2,6 +2,8 @@ import React from 'react';
 import { IBook } from '../Type/Type';
 import Link from 'next/link';
 import Image from 'next/image';
+
+import CrossBtn from './BookDetails/CrossBtn';
 interface bookProps{
     book:IBook
 }
@@ -103,6 +105,9 @@ const ListedCard = ({book}:bookProps) => {
               View Details
             </button>
             </Link>
+            <div>
+              <CrossBtn book={book}/>
+            </div>
 
           </div>
         </div>

@@ -11,7 +11,7 @@ const BookCard = ({ book }: BookCardProps) => {
     return (
         <Link href={`/Books/${book.bookId}`}>
         
-        <div className="border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300">
+        <div className="border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 h-[570]">
             <div className="bg-[#1313130d] rounded-2xl p-8 flex justify-center items-center mb-6 h-64">
                 <Image 
                     src={book.image} 
@@ -32,6 +32,7 @@ const BookCard = ({ book }: BookCardProps) => {
                     </span>
                 ))}
             </div>
+            <div className=' h-[150]'>
 
             <h2 className="text-2xl font-bold text-[#131313] mb-3 font-serif">
                 {book.bookName}
@@ -39,6 +40,8 @@ const BookCard = ({ book }: BookCardProps) => {
             <p className="text-[#131313cc] font-medium text-base mb-5">
                 By : {book.author}
             </p>
+            </div>
+
 
             <div className="border-t border-dashed border-gray-300 mb-5"></div>
 

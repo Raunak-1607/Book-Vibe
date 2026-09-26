@@ -1,23 +1,32 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
+  const pathName = usePathname();
   const links = (
     <>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/" 
+        className={` rounded-3xl ${pathName === "/" ? "text-amber-600 " : ""}`}
+        >Home</Link>
       </li>
 
       <li>
-        <Link href="/Listed-Books">Listed Books</Link>
+        <Link href="/Listed-Books"
+         className={` rounded-3xl ${pathName === "/Listed-Books" ? "text-amber-600 " : ""}`}
+        >Listed Books</Link>
       </li>
       <li>
-        <Link href="/Books">Read to books</Link>
+        <Link href="/Books"
+         className={` rounded-3xl ${pathName === "/Books" ? "text-amber-600 " : ""}`}
+        >Read to books</Link>
       </li>
     </>
   );
   return (
-    <nav className="bg-base-100 shadow-sm">
+    <nav className="bg-amber-50 shadow-sm">
 
     <div className="navbar container mx-auto ">
       <div className="navbar-start">
@@ -47,14 +56,14 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Book Vibe</a>
+        <Link href="/" className="btn btn-ghost text-xl font-bold italic">Book Vibe</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end gap-4">
-        <button className="btn btn-success">Sign in</button>
-        <button className="btn btn-info">Sign up</button>
+        <button className="btn btn-success rounded-3xl">Sign in</button>
+        <button className="btn btn-info rounded-3xl">Sign up</button>
       </div>
     </div>
 
