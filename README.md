@@ -1,8 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Book Vibe
 
-## Getting Started
+<div align="center">
+  <h3>Discover, Track, and Manage Your Reading Journey</h3>
+</div>
 
-First, run the development server:
+## 📖 About The Project
+
+**Book Vibe** is a modern, responsive web application built with **Next.js** and **React** that allows book enthusiasts to seamlessly track their reading lists. Whether you're maintaining a wishlist of books you want to read or a log of books you've completed, Book Vibe provides a clean and intuitive user interface to manage your literary adventures.
+
+With an elegant design powered by **Tailwind CSS v4** and **DaisyUI**, Book Vibe ensures a delightful user experience across all devices.
+
+## ✨ Features
+
+- **Book Discovery**: Browse and view detailed information about various books.
+- **Wishlist Management**: Easily add books to your reading wishlist.
+- **Read List**: Track books that you have already finished reading.
+- **Modern UI/UX**: Fast, accessible, and beautiful interface with smooth interactions.
+- **Toast Notifications**: Real-time feedback for user actions.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile viewing.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Library**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & [DaisyUI](https://daisyui.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Notifications**: [React Toastify](https://fkhadra.github.io/react-toastify/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js installed (v18.17.0 or later is recommended).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/book-vibe.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd book-vibe
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+### Running the Application
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -10,27 +65,14 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/book-vibe/issues).
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the [MIT License](LICENSE).
